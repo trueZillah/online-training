@@ -1,5 +1,6 @@
 
 from sqlalchemy import Column, String
+from marshmallow import Schema, fields
 
 from .entity import Entity, Base
 
@@ -14,8 +15,6 @@ class Exam(Entity, Base):
         Entity.__init__(self, created_by)
         self.title = title
         self.description = description
-<<<<<<< HEAD
-=======
 
 class ExamSchema(Schema):
     id = fields.Number()
@@ -24,4 +23,3 @@ class ExamSchema(Schema):
     created = fields.DateTime()
     updated_at = fields.DateTime()
     last_updated_by = fields.Str()
->>>>>>> online-training
