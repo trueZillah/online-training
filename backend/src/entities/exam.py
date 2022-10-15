@@ -1,4 +1,4 @@
-from turtle import title
+
 from sqlalchemy import Column, String
 from marshmallow import Schema, fields
 
@@ -16,7 +16,7 @@ class Exam(Entity, Base):
         self.title = title
         self.description = description
 
-class Examschema(Schema):
+class ExamSchema(Schema):
     id = fields.Number()
     title = fields.Str()
     description = fields.Str()
