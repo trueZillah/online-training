@@ -14,3 +14,14 @@ class Exam(Entity, Base):
         Entity.__init__(self, created_by)
         self.title = title
         self.description = description
+<<<<<<< HEAD
+=======
+
+class ExamSchema(Schema):
+    id = fields.Number()
+    title = fields.Str()
+    description = fields.Str()
+    created = fields.DateTime()
+    updated_at = fields.DateTime()
+    last_updated_by = fields.Str()
+>>>>>>> online-training
